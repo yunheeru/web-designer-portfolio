@@ -231,7 +231,7 @@ const revealHeader = () => setHeaderHidden(false);
 
 document.addEventListener("click", (event) => {
   if (event.target instanceof Element && !siteHeader.contains(event.target)) {
-    setHeaderHidden(true);
+    setHeaderHidden(!siteHeader.classList.contains("is-hidden"));
   }
 });
 

@@ -229,20 +229,14 @@ const setHeaderHidden = (isHidden) => {
 };
 const revealHeader = () => setHeaderHidden(false);
 
-document.addEventListener("click", (event) => {
-  if (event.target instanceof Element && !siteHeader.contains(event.target)) {
-    setHeaderHidden(!siteHeader.classList.contains("is-hidden"));
-  }
-});
-
 window.addEventListener("scroll", () => {
   const currentScrollY = window.scrollY;
-  if (currentScrollY < lastScrollY) revealHeader();
+  if (currentScrollY <= siteHeader.offsetHeight || currentScrollY < lastScrollY) {
+    revealHeader();
+  } else if (currentScrollY > lastScrollY) {
+    setHeaderHidden(true);
+  }
   lastScrollY = currentScrollY;
-}, { passive: true });
-
-document.addEventListener("pointermove", (event) => {
-  if (event.clientY <= 16) revealHeader();
 }, { passive: true });
 
 const forestViewport = document.querySelector(".forest-experience");
@@ -314,11 +308,6 @@ if (gsapCore && scrollTrigger) {
         .addLabel("last-steps", 4.55)
         .addLabel("sunlit-clearing", 5);
 
-      if (isDesktop && siteHeader) {
-        forestTimeline
-          .to(siteHeader, { yPercent: -110, autoAlpha: 0, duration: 0.35, ease: "power2.inOut" }, 2.05)
-          .to(siteHeader, { yPercent: 0, autoAlpha: 1, duration: 0.35, ease: "power2.out" }, 4.55);
-      }
     }
 
     const manifestoSection = document.querySelector(".manifesto-section");

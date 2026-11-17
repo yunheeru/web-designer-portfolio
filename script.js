@@ -335,12 +335,12 @@ if (gsapCore && scrollTrigger) {
       });
 
       manifestoTimeline
-        .fromTo(manifestoLines[0], { autoAlpha: 0, y: 70, scale: 0.94 }, { autoAlpha: 1, y: 0, scale: 1, duration: 0.65, ease: "power3.out" }, 0)
-        .addLabel("our", 0.72)
-        .fromTo(manifestoLines[1], { autoAlpha: 0, y: 70, scale: 0.94 }, { autoAlpha: 1, y: 0, scale: 1, duration: 0.65, ease: "power3.out" }, 0.86)
-        .addLabel("design", 1.58)
-        .fromTo(manifestoLines[2], { autoAlpha: 0, y: 70, scale: 0.94 }, { autoAlpha: 1, y: 0, scale: 1, duration: 0.65, ease: "power3.out" }, 1.72)
-        .addLabel("make", 2.44)
+        .fromTo(manifestoLines[0], { autoAlpha: 0, y: 30, scale: 0.97 }, { autoAlpha: 1, y: 0, scale: 1, duration: 0.3, ease: "power3.out" }, 0)
+        .addLabel("our", 0.3)
+        .fromTo(manifestoLines[1], { autoAlpha: 0, y: 70, scale: 0.94 }, { autoAlpha: 1, y: 0, scale: 1, duration: 0.3, ease: "power3.out" }, 0.24)
+        .addLabel("design", 0.54)
+        .fromTo(manifestoLines[2], { autoAlpha: 0, y: 70, scale: 0.94 }, { autoAlpha: 1, y: 0, scale: 1, duration: 0.3, ease: "power3.out" }, 0.48)
+        .addLabel("make", 0.78)
         .to(manifestoLines, { scale: 1.045, duration: 0.24, ease: "power2.out" }, 2.62)
         .to(manifestoLines, { scale: 1, duration: 0.28, ease: "power2.inOut" }, 2.86)
         .to(manifestoSection, { backgroundColor: "#3d4538", duration: 1.1, ease: "none" }, 1.1)

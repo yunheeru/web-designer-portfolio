@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 210" fill="none">
+  <ellipse cx="131" cy="193" rx="83" ry="10" fill="#263D31" opacity=".2"/>
+  <g class="leg-back">
+    <path d="M75 112c-5 17-11 38-15 58l10 4 22-45 8-20-25 3Z" fill="#946A46"/>
+    <path d="m60 168-2 12c8 5 17 2 24-2l1-8-23-2Z" fill="#49382D"/>
+  </g>
+  <g class="leg-back">
+    <path d="M104 120c-1 18 2 36 4 52l11 2 9-44-2-17-22 7Z" fill="#A8794E"/>
+    <path d="m106 168 1 12c8 5 17 3 23-2l-1-8-23-2Z" fill="#49382D"/>
+  </g>
+  <path d="M55 91c5-25 34-40 69-36 25 3 45 18 56 39 10 18 0 34-22 43-31 13-79 7-96-9-8-8-10-22-7-37Z" fill="#A8794E"/>
+  <path d="M66 79c15-17 42-23 68-17 14 3 26 11 35 23-23 3-44 13-63 25-20-1-34-12-40-31Z" fill="#B78657" opacity=".78"/>
+  <path d="M166 99c8-20 15-42 20-61l21 6c-3 23-9 47-13 67l-12 17-16-29Z" fill="#B78657"/>
+  <path d="M59 86c-15-4-25-14-26-26 13 3 24 10 31 19m137-40c13-12 27-16 40-12-9 12-20 18-34 20" fill="#A8794E"/>
+  <path d="M190 32c-8-12-9-22-4-31m6 22 12-12m-13 19 14-1m21 0c-2-12 1-21 8-28m-8 20-13-8m12 15-14-3" stroke="#75543B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M180 31c8-14 22-19 34-12 11 7 12 20 4 30l17 8-7 11-21-5c-10 10-25 9-34-1-8-9-4-23 7-31Z" fill="#B78657"/>
+  <path d="M184 29c-13-11-25-12-37-4 10 12 20 17 34 15m50-8c14-8 25-8 36 0-11 10-22 14-35 12" fill="#C79563"/>
+  <circle cx="211" cy="43" r="3.2" fill="#30271F"/>
+  <circle cx="212" cy="42" r="1" fill="#FFF6E7"/>
+  <path d="m230 57 9 2-8 6" fill="#49382D" stroke="#49382D" stroke-width="3" stroke-linejoin="round"/>
+  <g fill="#F0D8B3">
+    <circle cx="89" cy="78" r="3.5"/><circle cx="105" cy="70" r="3"/>
+    <circle cx="123" cy="75" r="3.5"/><circle cx="145" cy="82" r="3"/>
+    <circle cx="79" cy="96" r="3"/><circle cx="102" cy="92" r="3.5"/>
+    <circle cx="127" cy="97" r="3"/><circle cx="148" cy="102" r="3.5"/>
+    <circle cx="93" cy="112" r="3"/><circle cx="119" cy="116" r="3"/>
+  </g>
+  <g class="leg-front">
+    <path d="M139 119c3 17 5 35 4 52l11 2 12-44-3-18-24 8Z" fill="#B78657"/>
+    <path d="m143 169 1 12c8 5 17 2 24-3l-2-8-23-1Z" fill="#49382D"/>
+  </g>
+  <g class="leg-front">
+    <path d="M160 111c9 16 15 34 20 51l11-2 1-46-9-16-23 13Z" fill="#C79563"/>
+    <path d="m179 160 4 12c9 2 16-3 21-10l-4-7-21 5Z" fill="#49382D"/>
+  </g>
+  <path d="M48 91c-10-7-17-8-25-4 7 9 15 13 26 13" fill="#A8794E"/>
+  <style>
+    .leg-back { transform-box: fill-box; transform-origin: 50% 8%; animation: step .32s ease-in-out infinite alternate; }
+    .leg-front { transform-box: fill-box; transform-origin: 50% 8%; animation: step .32s ease-in-out infinite alternate-reverse; }
+    @keyframes step { from { transform: rotate(-9deg); } to { transform: rotate(9deg); } }
+    @media (prefers-reduced-motion: reduce) { .leg-back, .leg-front { animation: none; } }
+  </style>
+</svg>

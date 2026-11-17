@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f5f4f0" />
+    <meta
+      name="description"
+      content="브랜드의 고유한 이야기를 감각적인 디지털 경험으로 디자인하는 루의 포트폴리오."
+    />
+    <title>루-디지털 디자이너 포트폴리오</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header-inner">
+        <a class="wordmark" href="#home" aria-label="루 홈">Ru<span>.</span></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span></span><span></span><span class="sr-only">메뉴 열기</span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="주요 메뉴">
+          <a href="#work">작업물</a>
+          <a href="#forest">스크롤 실험</a>
+          <a href="#horizontal-work">가로 포트폴리오</a>
+          <a href="#about">소개</a>
+          <a href="#contact">연락하기 <span class="arrow">↗</span></a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section-wrap" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> AVAILABLE FOR SELECT PROJECTS</p>
+          <h1>좋은 디자인은<br />좋은 <span class="serif-word">이야기</span>에서<br />시작돼요<span class="accent">.</span></h1>
+          <div class="hero-foot">
+            <p>브랜드의 본질을 발견하고,<br />사람들의 마음에 남는 디지털 경험을 만듭니다.</p>
+            <a class="round-link" href="#work" aria-label="작업물 보기"><span>↓</span></a>
+          </div>
+        </div>
+        <div class="hero-image" role="img" aria-label="자연광이 스며드는 미니멀한 작업 공간">
+          <div class="hero-image-caption"><span>DESIGN WITH INTENTION</span><span>SEOUL, KR · 2025</span></div>
+          <div class="hero-note"><span>✳</span><p>Curiosity<br />over convention.</p></div>
+        </div>
+        <div class="hero-index"><span>01</span><span class="index-line"></span><span>SCROLL TO EXPLORE</span></div>
+      </section>
+
+      <section class="work-section section-wrap" id="work">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">A FEW THINGS I’VE MADE</p>
+            <h2>Selected <span class="serif-word">work</span><span class="accent">.</span></h2>
+          </div>
+          <p class="section-intro">전략부터 디테일까지, 브랜드가 더<br />자기답게 빛나는 순간을 디자인합니다.</p>
+        </div>
+        <div class="filter-row" role="group" aria-label="작업물 카테고리 필터">
+          <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">전체 <span>04</span></button>
+          <button class="filter-button" type="button" data-filter="brand" aria-pressed="false">브랜드 <span>02</span></button>
+          <button class="filter-button" type="button" data-filter="digital" aria-pressed="false">디지털 <span>02</span></button>
+        </div>
+        <div class="project-grid">
+          <button class="project-card project-card--wide" type="button" data-project="0" data-category="brand">
+            <span class="project-image project-image--morrow">
+              <span class="project-stamp">GOOD<br />THINGS<br />TAKE TIME</span>
+              <span class="project-open" aria-hidden="true">↗</span>
+            </span>
+            <span class="project-meta"><span><strong>MORROW</strong><small>Brand identity · Packaging</small></span><span class="project-year">2025</span></span>
+          </button>
+          <button class="project-card project-card--offset" type="button" data-project="1" data-category="digital">
+            <span class="project-image project-image--still">
+              <span class="still-wordmark">still<span>.</span></span>
+              <span class="still-subtitle">A LITTLE SPACE, JUST FOR YOU</span>
+              <span class="project-open" aria-hidden="true">↗</span>
+            </span>
+            <span class="project-meta"><span><strong>STILL, YOUR DAY</strong><small>Mobile app · UX/UI</small></span><span class="project-year">2025</span></span>
+          </button>
+          <button class="project-card project-card--offset-left" type="button" data-project="2" data-category="brand">
+            <span class="project-image project-image--serein">
+              <span class="serein-mark">SÉREIN</span>
+              <span class="serein-caption">SKIN, IN BALANCE.</span>
+              <span class="project-open" aria-hidden="true">↗</span>
+            </span>
+            <span class="project-meta"><span><strong>SÉREIN</strong><small>Brand strategy · Art direction</small></span><span class="project-year">2024</span></span>
+          </button>
+          <button class="project-card project-card--offset" type="button" data-project="3" data-category="digital">
+            <span class="project-image project-image--archive">
+              <span class="archive-topline">THE OBJECT ARCHIVE — VOL. 01</span>
+              <span class="archive-title">Objects<br />with a past<span>.</span></span>
+              <span class="project-open" aria-hidden="true">↗</span>
+            </span>
+            <span class="project-meta"><span><strong>OBJECT ARCHIVE</strong><small>Editorial website · E-commerce</small></span><span class="project-year">2024</span></span>
+          </button>
+        </div>
+      </section>
+
+      <section class="forest-experience" id="forest" aria-labelledby="forest-title">
+        <div class="forest-intro section-wrap">
+          <div>
+            <p class="eyebrow">01 / SCROLLING STUDY</p>
+            <h2 id="forest-title">천천히, 숲속으로<span class="accent">.</span></h2>
+          </div>
+          <p>스크롤을 내리면 사슴은 한 걸음씩 걷고,<br />숲은 서로 다른 속도로 뒤로 흐릅니다.</p>
+        </div>
+        <div class="forest-scene" aria-label="사슴이 숲속을 걸어가는 인터랙티브 장면">
+          <div class="forest-sky" aria-hidden="true"></div>
+          <div class="forest-light" aria-hidden="true"></div>
+          <div class="forest-layer forest-layer--back" aria-hidden="true"></div>
+          <div class="forest-mist" aria-hidden="true"></div>
+          <div class="forest-layer forest-layer--mid" aria-hidden="true"></div>
+          <div class="forest-walker">
+            <img src="assets/deer.svg" alt="숲을 걷는 사슴 캐릭터" />
+          </div>
+          <div class="forest-layer forest-layer--front" aria-hidden="true"></div>
+          <div class="forest-scene-caption">
+            <span>SCROLL TO WALK</span>
+            <strong>한 걸음, 또 한 걸음.</strong>
+            <span class="forest-scroll-meter" aria-hidden="true"><span></span></span>
+          </div>
+          <span class="forest-scene-coordinate" aria-hidden="true">A QUIET PATH · 01</span>
+        </div>
+      </section>
+
+      <section class="story-section section-wrap" id="experiments" aria-labelledby="story-title">
+        <div class="story-sidebar">
+          <p class="eyebrow">02 / STORY IN MOTION</p>
+          <h2 id="story-title">고정된 시선,<br />흐르는 <span class="serif-word">이야기</span><span class="accent">.</span></h2>
+          <p>왼쪽에 머무는 생각 하나.<br />오른쪽으로 이어지는 세 가지 장면.</p>
+          <span class="story-sidebar-note">SCROLL TO DISCOVER <span>↓</span></span>
+        </div>
+        <div class="story-content">
+          <article class="story-card">
+            <div class="story-card-visual story-card-visual--morrow">
+              <span class="story-card-kicker">A SLOWER KIND OF EVERYDAY</span>
+              <strong>made to<br /><em>stay.</em></strong>
+              <span class="story-card-seal">M<br />/ 01</span>
+            </div>
+            <div class="story-card-meta">
+              <span><small>01 — BRAND WORLD</small><strong>오래 곁에 두고 싶은 감각</strong></span>
+              <span>↗</span>
+            </div>
+          </article>
+          <article class="story-card">
+            <div class="story-card-visual story-card-visual--still">
+              <span class="story-phone">
+                <span class="story-phone-top">9:41 <span>•••</span></span>
+                <span class="story-phone-title">오늘의 마음은<br /><em>어떤 날씨인가요?</em></span>
+                <span class="story-weather">☼</span>
+                <span class="story-phone-button">마음 기록하기&nbsp; +</span>
+              </span>
+              <span class="story-card-side-note">A LITTLE SPACE,<br />JUST FOR YOU</span>
+            </div>
+            <div class="story-card-meta">
+              <span><small>02 — DIGITAL EXPERIENCE</small><strong>나를 돌보는 작은 루틴</strong></span>
+              <span>↗</span>
+            </div>
+          </article>
+          <article class="story-card">
+            <div class="story-card-visual story-card-visual--archive">
+              <span class="story-archive-label">OBJECT ARCHIVE · VOL. 01</span>
+              <strong>Objects<br /><em>with a past.</em></strong>
+              <span class="story-archive-caption">A collection of things<br />worth keeping.</span>
+            </div>
+            <div class="story-card-meta">
+              <span><small>03 — EDITORIAL PLATFORM</small><strong>시간이 쌓인 물건의 이야기</strong></span>
+              <span>↗</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="manifesto-section" id="manifesto" aria-labelledby="manifesto-title">
+        <div class="manifesto-atmosphere" aria-hidden="true">
+          <span class="manifesto-glow"></span>
+          <span class="manifesto-orbit"></span>
+        </div>
+        <p class="manifesto-index">03 / WORDS INTO DESIGN</p>
+        <h2 class="manifesto-title" id="manifesto-title">
+          <span class="manifesto-line">우리의</span>
+          <span class="manifesto-line">디자인을</span>
+          <span class="manifesto-line">만듭니다<span class="accent">.</span></span>
+        </h2>
+        <p class="manifesto-prompt">SCROLL TO SEE IT TAKE SHAPE</p>
+        <span class="manifesto-progress" aria-hidden="true"><span></span></span>
+      </section>
+
+      <section class="horizontal-portfolio" id="horizontal-work" aria-labelledby="horizontal-work-title">
+        <div class="horizontal-intro section-wrap">
+          <div>
+            <p class="eyebrow">04 / HORIZONTAL CASE STUDIES</p>
+            <h2 id="horizontal-work-title">스크롤로 넘기는<br /><span class="serif-word">포트폴리오</span><span class="accent">.</span></h2>
+          </div>
+          <p>스크롤을 내리면 네 개의 프로젝트가<br />화면을 가로질러 펼쳐집니다.</p>
+        </div>
+        <div class="horizontal-stage" aria-label="가로로 펼쳐지는 주요 프로젝트">
+          <div class="horizontal-track">
+            <article class="horizontal-panel">
+              <div class="horizontal-panel-art horizontal-panel-art--morrow">
+                <span class="horizontal-panel-index">01 / BRAND IDENTITY</span>
+                <span class="horizontal-art-title horizontal-art-title--morrow">morrow<span>.</span><small>slow-made living</small></span>
+                <span class="horizontal-art-note">GOOD THINGS<br />TAKE TIME</span>
+              </div>
+              <div class="horizontal-panel-meta"><span><small>BRAND · PACKAGING · ART DIRECTION</small><strong>MORROW</strong></span><span>2025&nbsp; ↗</span></div>
+            </article>
+            <article class="horizontal-panel">
+              <div class="horizontal-panel-art horizontal-panel-art--still">
+                <span class="horizontal-panel-index">02 / DIGITAL PRODUCT</span>
+                <span class="horizontal-art-title horizontal-art-title--still">still<span>.</span></span>
+                <span class="horizontal-art-note">A LITTLE SPACE,<br />JUST FOR YOU</span>
+                <span class="horizontal-phone" aria-hidden="true"><span>오늘의 마음은</span><strong>어떤 날씨인가요?</strong><i>☼</i><b>마음 기록하기　＋</b></span>
+              </div>
+              <div class="horizontal-panel-meta"><span><small>PRODUCT STRATEGY · UX/UI</small><strong>STILL, YOUR DAY</strong></span><span>2025&nbsp; ↗</span></div>
+            </article>
+            <article class="horizontal-panel">
+              <div class="horizontal-panel-art horizontal-panel-art--serein">
+                <span class="horizontal-panel-index">03 / BRAND WORLD</span>
+                <span class="horizontal-art-title horizontal-art-title--serein">SÉREIN</span>
+                <span class="horizontal-art-note">SKIN,<br />IN BALANCE.</span>
+              </div>
+              <div class="horizontal-panel-meta"><span><small>BRAND STRATEGY · PACKAGING</small><strong>SÉREIN</strong></span><span>2024&nbsp; ↗</span></div>
+            </article>
+            <article class="horizontal-panel">
+              <div class="horizontal-panel-art horizontal-panel-art--archive">
+                <span class="horizontal-panel-index">04 / EDITORIAL PLATFORM</span>
+                <span class="horizontal-art-title horizontal-art-title--archive">Objects<br /><em>with a past.</em></span>
+                <span class="horizontal-art-note">A COLLECTION OF THINGS<br />WORTH KEEPING</span>
+              </div>
+              <div class="horizontal-panel-meta"><span><small>EDITORIAL · DIGITAL EXPERIENCE</small><strong>OBJECT ARCHIVE</strong></span><span>2024&nbsp; ↗</span></div>
+            </article>
+          </div>
+          <div class="horizontal-stage-controls">
+            <span class="horizontal-scroll-hint">SCROLL TO EXPLORE <i>↓</i></span>
+            <span class="horizontal-progress" aria-hidden="true"><span></span></span>
+            <span class="horizontal-counter"><span class="horizontal-current">01</span> <i>/ 04</i></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section" id="about">
+        <div class="about-inner section-wrap">
+          <div class="about-label">
+            <p class="eyebrow">A LITTLE ABOUT ME</p>
+            <span class="about-sparkle">✳</span>
+          </div>
+          <div class="about-copy">
+            <h2>안녕하세요,<br />디자이너 <span class="serif-word">루</span>입니다<span class="accent">.</span></h2>
+            <p>작은 관찰에서 시작해 오래 기억되는 경험을 만드는 디자이너입니다. 브랜드의 목소리와 사용자의 마음 사이, 그 섬세한 균형을 시각 언어로 풀어냅니다.</p>
+            <div class="about-details">
+              <div><span class="detail-label">FOCUS</span><span>브랜드 아이덴티티 · 디지털 경험 · 아트 디렉션</span></div>
+              <div><span class="detail-label">BASED IN</span><span>Seoul, South Korea</span></div>
+              <div><span class="detail-label">EXPERIENCE</span><span>Independent designer · 2021 — Present</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section section-wrap" id="contact">
+        <p class="eyebrow">HAVE A GOOD ONE IN MIND?</p>
+        <h2>함께 만들<br />이야기가 <span class="serif-word">있나요</span><span class="accent">?</span></h2>
+        <a class="contact-link" href="mailto:hello@seoyun.design">yuneyru@naver.com <span>↗</span></a>
+        <div class="contact-bottom"><span>기분 좋은 협업을 기다리고 있어요.</span><a href="#home">맨 위로 ↑</a></div>
+      </section>
+    </main>
+
+    <footer class="site-footer section-wrap"><a class="wordmark" href="#home">루<span>.</span></a><span>© 2025 RU</span><span>DESIGNED WITH CARE IN Daejeon</span></footer>
+
+    <dialog class="project-dialog" aria-labelledby="dialog-title">
+      <button class="dialog-close" type="button" aria-label="상세 보기 닫기">×</button>
+      <div class="dialog-image" id="dialog-image" aria-hidden="true"></div>
+      <p class="eyebrow" id="dialog-category"></p>
+      <h2 id="dialog-title"></h2>
+      <p id="dialog-description"></p>
+      <div class="dialog-footer"><span id="dialog-services"></span><span id="dialog-year"></span></div>
+      <div class="dialog-navigation" aria-label="프로젝트 이동">
+        <button class="dialog-previous" type="button" aria-label="이전 프로젝트" aria-keyshortcuts="ArrowLeft">←</button>
+        <span class="dialog-position" aria-live="polite"></span>
+        <button class="dialog-next" type="button" aria-label="다음 프로젝트" aria-keyshortcuts="ArrowRight">→</button>
+      </div>
+    </dialog>
+  </body>
+</html>

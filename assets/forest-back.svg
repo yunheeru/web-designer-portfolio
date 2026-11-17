@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700" fill="none">
+  <defs>
+    <linearGradient id="ridge" x1="800" y1="155" x2="800" y2="610" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#b3c5a5"/>
+      <stop offset="1" stop-color="#788e70"/>
+    </linearGradient>
+    <linearGradient id="tree" x1="0" y1="168" x2="0" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#91a984"/>
+      <stop offset="1" stop-color="#72886e"/>
+    </linearGradient>
+  </defs>
+  <path d="M0 413C135 338 243 366 361 322c117-43 193-131 336-112 142 20 192 127 324 100 132-28 214-139 337-98 120 40 158 103 242 104v384H0V413Z" fill="url(#ridge)" opacity=".74"/>
+  <path d="M0 476c137-68 256-37 384-88 121-49 225-109 354-68 111 35 196 109 326 73 135-38 210-86 319-50 86 29 141 66 217 61v296H0V476Z" fill="#849a79" opacity=".8"/>
+  <g fill="url(#tree)" opacity=".9">
+    <path d="m97 574 84-216 84 216h-51l58 88H90l58-88H97Zm212 20 70-179 70 179h-42l49 68H303l48-68h-42Zm1037-14 91-231 91 231h-54l63 82h-199l63-82h-55Zm164 3 66-170 66 170h-40l46 64h-144l46-64h-40Zm-959-25 54-138 54 138h-32l38 51h-120l38-51h-32Z"/>
+    <path d="M177 565v88m202-68v67m1052-83v84m164-70v70m-1011-84v68" stroke="#71886e" stroke-width="9"/>
+  </g>
+  <path d="M0 584c205-30 322 22 510-6 202-31 305-60 472-27 188 38 335 67 618 18v131H0V584Z" fill="#758c70" opacity=".42"/>
+</svg>
